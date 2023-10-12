@@ -1,0 +1,46 @@
+{"level":30,"time":"2023-10-12T05:53:41.458Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Listening on 63073"}
+{"level":30,"time":"2023-10-12T05:53:41.578Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:41.578Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:41.583Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:41.583Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:41.590Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-10-12T05:53:41.829Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-10-12T05:53:41.831Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-10-12T05:53:41.831Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-10-12T05:53:41.831Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Trace file: "}
+{"level":30,"time":"2023-10-12T05:53:41.899Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changed active context"}
+{"level":30,"time":"2023-10-12T05:53:41.899Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method newContext"}
+{"level":30,"time":"2023-10-12T05:53:41.902Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-10-12T05:53:41.902Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-10-12T05:53:42.203Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-10-12T05:53:42.203Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2023-10-12T05:53:44.273Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-10-12T05:53:44.276Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method waitUntilNetworkIsIdle"}
+{"level":30,"time":"2023-10-12T05:53:45.508Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method waitUntilNetworkIsIdle"}
+{"level":30,"time":"2023-10-12T05:53:45.519Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.525Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.528Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.531Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.534Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changed active context"}
+{"level":30,"time":"2023-10-12T05:53:45.534Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-10-12T05:53:45.534Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2023-10-12T05:53:45.538Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.540Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.542Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-10-12T05:53:45.542Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-10-12T05:53:45.544Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-10-12T05:53:45.545Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-10-12T05:53:45.547Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-10-12T05:53:45.547Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2023-10-12T05:53:45.549Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.550Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.552Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changed active context"}
+{"level":30,"time":"2023-10-12T05:53:45.552Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-10-12T05:53:45.552Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2023-10-12T05:53:45.554Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-10-12T05:53:45.567Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Removed page=8d424201-2fb4-4400-93d8-4c81d97e9429 from context=0213eefc-c9c3-49b9-b407-d38542496546 page stack"}
+{"level":30,"time":"2023-10-12T05:53:45.567Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-10-12T05:53:45.572Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:45.572Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-12T05:53:47.594Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-10-12T05:53:47.614Z","pid":67737,"hostname":"putass-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}

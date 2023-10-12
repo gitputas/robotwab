@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.11.0 on win32)" generated="20230510 16:12:50.063" rpa="false" schemaversion="3">
+<suite id="s1" name="Verify Qr Code" source="C:\rotest\read qr\verify_qr_code.robot">
+<test id="s1-t1" name="TEST_CASE_00001 Success - Call Api Generate Qr Code" line="35">
+<kw name="Verify Qrcode Success">
+<arg>${response}</arg>
+<msg timestamp="20230510 16:12:50.291" level="FAIL">Variable '${response}' not found.</msg>
+<status status="FAIL" starttime="20230510 16:12:50.291" endtime="20230510 16:12:50.291"/>
+</kw>
+<kw name="Verify QRCODE From Python">
+<arg>${qr_image}</arg>
+<status status="NOT RUN" starttime="20230510 16:12:50.291" endtime="20230510 16:12:50.291"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230510 16:12:50.292" endtime="20230510 16:12:50.292"/>
+</kw>
+<status status="FAIL" starttime="20230510 16:12:50.286" endtime="20230510 16:12:50.292">Variable '${response}' not found.</status>
+</test>
+<status status="FAIL" starttime="20230510 16:12:50.063" endtime="20230510 16:12:50.292"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Verify Qr Code">Verify Qr Code</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,152 @@
+{
+  "id": "ec4fbfa4-497f-4303-8c5c-bd905c05fb04",
+  "version": "2.0",
+  "name": "c",
+  "url": "https://cdn3.chillpay.co/KCreditCard/f59d250d751212c81b707f0c05d1ff83f9caee14/CreditPayment?Status=0&Code=200&Message=Success&Amount=2000&OrderNo=order20230518152909&CustomerId=cus100005&ReturnUrl=https%3A%2F%2Fcdn.chillpay.co%2FResultForMerchants%2F&PaymentUrl=https%3A%2F%2Fcdn3.chillpay.co%2FKCreditCard%2Ff59d250d751212c81b707f0c05d1ff83f9caee14%2FCreditPayment&IpAddress=172.31.18.52&Token=f59d250d751212c81b707f0c05d1ff83f9caee14&TransactionId=13247269&ChannelCode=creditcard_kbank&CreatedDate=20230518152912&ExpiredDate=20230518155911",
+  "tests": [{
+    "id": "fba04978-2345-4442-a0ad-c218ed2d2978",
+    "name": "Untitled",
+    "commands": [{
+      "id": "f8282b42-d327-4142-b184-6e456d841c52",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b0a5d38-1ef5-47da-b549-6308d3b9c68f",
+      "comment": "",
+      "command": "open",
+      "target": "/KCreditCard/8dd509e01801bc8bad416c4efa52c1745ca42b56/CreditPayment?Status=0&Code=200&Message=Success&Amount=2000&OrderNo=order20230518151017&CustomerId=cus100005&ReturnUrl=https%3A%2F%2Fcdn.chillpay.co%2FResultForMerchants%2F&PaymentUrl=https%3A%2F%2Fcdn3.chillpay.co%2FKCreditCard%2F8dd509e01801bc8bad416c4efa52c1745ca42b56%2FCreditPayment&IpAddress=172.31.18.52&Token=8dd509e01801bc8bad416c4efa52c1745ca42b56&TransactionId=13246997&ChannelCode=creditcard_kbank&CreatedDate=20230518151019&ExpiredDate=20230518154018",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "859af6c5-c820-44ae-af22-20eab643f5cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1395x852",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73d90a0c-a277-4d4a-921f-56e264326485",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdeabbc0-7a5f-4e60-b6a5-b7c9449030c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close-buttton",
+      "targets": [
+        ["css=.close-buttton", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f839280-b7a4-4ecc-a6b3-894370e37532",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a6d9531-c60b-4e63-8f67-e70e5a846112",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-yes",
+      "targets": [
+        ["css=.icon-yes", "css:finder"],
+        ["xpath=//button[@id='_chillpay_btn_confirm_yes']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d2cfe72-d2ad-4806-bdfb-3615820cdfbc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6e000199-7a41-49f4-8005-768cf33c1941",
+    "name": "s",
+    "commands": [{
+      "id": "47e30b38-a227-4903-a8dc-8e039da4e215",
+      "comment": "",
+      "command": "open",
+      "target": "https://cdn3.chillpay.co/KCreditCard/f59d250d751212c81b707f0c05d1ff83f9caee14/CreditPayment?Status=0&Code=200&Message=Success&Amount=2000&OrderNo=order20230518152909&CustomerId=cus100005&ReturnUrl=https%3A%2F%2Fcdn.chillpay.co%2FResultForMerchants%2F&PaymentUrl=https%3A%2F%2Fcdn3.chillpay.co%2FKCreditCard%2Ff59d250d751212c81b707f0c05d1ff83f9caee14%2FCreditPayment&IpAddress=172.31.18.52&Token=f59d250d751212c81b707f0c05d1ff83f9caee14&TransactionId=13247269&ChannelCode=creditcard_kbank&CreatedDate=20230518152912&ExpiredDate=20230518155911",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3cedc96-f3c0-4bb7-baf1-c049462a993b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1395x852",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eabf6645-9519-4728-bbdb-4376a45946b1",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0e29486-e1eb-4862-9568-299674ec13b9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img",
+      "targets": [
+        ["css=.close-buttton", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8223e84-cf27-46bb-8408-402933c1f6dc",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "292084d9-3f2a-4094-bbd6-cacbcc962545",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-yes",
+      "targets": [
+        ["css=.icon-yes", "css:finder"],
+        ["xpath=//button[@id='_chillpay_btn_confirm_yes']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9acf12d5-8c70-4458-b30d-87aa1e3d505f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fa6b9dbe-a7e9-472c-94dc-42f81579479f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fba04978-2345-4442-a0ad-c218ed2d2978"]
+  }],
+  "urls": ["https://cdn3.chillpay.co/", "https://cdn3.chillpay.co/KCreditCard/f59d250d751212c81b707f0c05d1ff83f9caee14/CreditPayment?Status=0&Code=200&Message=Success&Amount=2000&OrderNo=order20230518152909&CustomerId=cus100005&ReturnUrl=https%3A%2F%2Fcdn.chillpay.co%2FResultForMerchants%2F&PaymentUrl=https%3A%2F%2Fcdn3.chillpay.co%2FKCreditCard%2Ff59d250d751212c81b707f0c05d1ff83f9caee14%2FCreditPayment&IpAddress=172.31.18.52&Token=f59d250d751212c81b707f0c05d1ff83f9caee14&TransactionId=13247269&ChannelCode=creditcard_kbank&CreatedDate=20230518152912&ExpiredDate=20230518155911"],
+  "plugins": []
+}

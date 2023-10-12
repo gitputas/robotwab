@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.11.0 on win32)" generated="20230508 13:53:20.808" rpa="false" schemaversion="3">
+<suite id="s1" name="Cimbnew" source="C:\rotest\tt\cimbnew.robot">
+<test id="s1-t1" name="Gen QR success" line="7">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://dev-hwplugin.chillpay.co/chillpay/payment/dev3/apiservice-payment02.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 13:53:20.965" level="INFO">Opening browser 'chrome' to base url 'https://dev-hwplugin.chillpay.co/chillpay/payment/dev3/apiservice-payment02.php'.</msg>
+<status status="PASS" starttime="20230508 13:53:20.964" endtime="20230508 13:53:22.426"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>xpath://*[@id="MerchantCode"]</arg>
+<arg>M000001</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230508 13:53:22.427" level="INFO">Selecting options from selection list 'xpath://*[@id="MerchantCode"]' by value M000001.</msg>
+<status status="PASS" starttime="20230508 13:53:22.427" endtime="20230508 13:53:22.474"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>xpath://*[@id="ChannelID"]</arg>
+<arg>bank_qrcode</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230508 13:53:22.475" level="INFO">Selecting options from selection list 'xpath://*[@id="ChannelID"]' by value bank_qrcode.</msg>
+<status status="PASS" starttime="20230508 13:53:22.474" endtime="20230508 13:53:22.534"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>xpath://*[@id="RouteNo"]</arg>
+<arg>14</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230508 13:53:22.535" level="INFO">Selecting options from selection list 'xpath://*[@id="RouteNo"]' by value 14.</msg>
+<status status="PASS" starttime="20230508 13:53:22.534" endtime="20230508 13:53:22.609"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath://*[@id="Amount"]</arg>
+<arg>20</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 13:53:22.610" level="INFO">Typing text '20' into text field 'xpath://*[@id="Amount"]'.</msg>
+<status status="PASS" starttime="20230508 13:53:22.609" endtime="20230508 13:53:22.708"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>xpath://*[@id="Currency"]</arg>
+<arg>764</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230508 13:53:22.709" level="INFO">Selecting options from selection list 'xpath://*[@id="Currency"]' by value 764.</msg>
+<status status="PASS" starttime="20230508 13:53:22.709" endtime="20230508 13:53:22.764"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="btnSubmit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 13:53:22.764" level="INFO">Clicking element 'xpath://*[@id="btnSubmit"]'.</msg>
+<status status="PASS" starttime="20230508 13:53:22.764" endtime="20230508 13:53:23.344"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>QR PAYMENT</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 13:53:23.344" endtime="20230508 13:53:25.658"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="BtnSaveQR"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 13:53:25.660" level="INFO">Clicking element 'xpath://*[@id="BtnSaveQR"]'.</msg>
+<status status="PASS" starttime="20230508 13:53:25.658" endtime="20230508 13:53:25.689"/>
+</kw>
+<status status="PASS" starttime="20230508 13:53:20.964" endtime="20230508 13:53:25.689"/>
+</test>
+<status status="PASS" starttime="20230508 13:53:20.809" endtime="20230508 13:53:25.690"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Cimbnew">Cimbnew</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

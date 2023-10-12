@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.12 on darwin)" generated="20230405 10:07:57.698" rpa="false" schemaversion="3">
+<suite id="s1" name="[UAT] Jitta Card Payment" source="/Users/it01gb/Desktop/[UAT] Jitta Card Payment">
+<suite id="s1-s1" name="Testcase" source="/Users/it01gb/Desktop/[UAT] Jitta Card Payment/testcase">
+<suite id="s1-s1-s1" name="Testcase" source="/Users/it01gb/Desktop/[UAT] Jitta Card Payment/testcase/testcase.robot">
+<test id="s1-s1-s1-t1" name="[TC01] Login" line="8">
+<kw name="Login SimPOS" library="keyword">
+<arg>${simpos_url}</arg>
+<arg>${login_url}</arg>
+<arg>${login_btn}</arg>
+<arg>${email}</arg>
+<arg>${email_test_data}</arg>
+<arg>${password}</arg>
+<arg>${password_test_data}</arg>
+<arg>${signin_btn}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${simpos_url}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230405 10:07:57.922" level="INFO">Opening browser 'gc' to base url 'https://developer.sprint.paymentology.com/tools/simpos/'.</msg>
+<status status="PASS" starttime="20230405 10:07:57.921" endtime="20230405 10:08:08.526"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230405 10:08:08.527" endtime="20230405 10:08:08.986"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:08.987" level="INFO">Clicking element 'xpath: //*[contains(text(), "Login")]'.</msg>
+<status status="PASS" starttime="20230405 10:08:08.986" endtime="20230405 10:08:11.850"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:11.850" endtime="20230405 10:08:11.870"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${email}</arg>
+<arg>${email_test_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:11.871" level="INFO">Typing text 'it@gbprimepay.com' into text field 'id:login-user-email'.</msg>
+<status status="PASS" starttime="20230405 10:08:11.871" endtime="20230405 10:08:12.188"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:12.188" endtime="20230405 10:08:12.205"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>${password}</arg>
+<arg>${password_test_data}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:12.205" level="INFO">Typing password into text field 'id:login-user-password'.</msg>
+<msg timestamp="20230405 10:08:12.237" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230405 10:08:12.325" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230405 10:08:12.205" endtime="20230405 10:08:12.325"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${signin_btn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:12.325" endtime="20230405 10:08:12.337"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${signin_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:12.338" level="INFO">Clicking element 'id:js--login-submit'.</msg>
+<status status="PASS" starttime="20230405 10:08:12.338" endtime="20230405 10:08:12.502"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230405 10:08:17.504" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230405 10:08:12.503" endtime="20230405 10:08:17.504"/>
+</kw>
+<status status="PASS" starttime="20230405 10:07:57.921" endtime="20230405 10:08:17.505"/>
+</kw>
+<kw name="Card Detail" library="keyword">
+<arg>${cardNo_field}</arg>
+<arg>${cardNo_data}</arg>
+<arg>${expiredMonth_field}</arg>
+<arg>${expiredMonth_data}</arg>
+<arg>${expiredYear_field}</arg>
+<arg>${expiredYear_data}</arg>
+<arg>${cvv_field}</arg>
+<arg>${cvv_data}</arg>
+<kw name="Select Frame" library="Selenium2Library">
+<arg>//*[@id="post-363"]/section[1]/div/div/div/iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230405 10:08:17.506" level="INFO">Selecting frame '//*[@id="post-363"]/section[1]/div/div/div/iframe'.</msg>
+<status status="PASS" starttime="20230405 10:08:17.505" endtime="20230405 10:08:18.988"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${web_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:18.989" level="INFO">Clicking element 'css=#web &gt; a'.</msg>
+<status status="PASS" starttime="20230405 10:08:18.988" endtime="20230405 10:08:19.326"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${cardNo_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:19.326" endtime="20230405 10:08:19.435"/>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>document.getElementById('${cardNo_field}').value='${cardNo_data}'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230405 10:08:19.436" level="INFO">Executing JavaScript:
+document.getElementById('cardNumber').value='5267 2668 6181 7199'
+Without any arguments.</msg>
+<status status="PASS" starttime="20230405 10:08:19.435" endtime="20230405 10:08:19.445"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${\n}&gt; Card Number : ${cardNo_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 10:08:19.445" endtime="20230405 10:08:19.446"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${expiredMonth_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:19.446" endtime="20230405 10:08:19.460"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${expiredMonth_field}</arg>
+<arg>${expiredMonth_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:19.461" level="INFO">Typing text '03' into text field 'id:month'.</msg>
+<status status="PASS" starttime="20230405 10:08:19.460" endtime="20230405 10:08:19.676"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; Expired Month : ${expiredMonth_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 10:08:19.676" endtime="20230405 10:08:19.677"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${expiredYear_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:19.677" endtime="20230405 10:08:19.720"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${expiredYear_field}</arg>
+<arg>${expiredYear_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:19.720" level="INFO">Typing text '28' into text field 'id:year'.</msg>
+<status status="PASS" starttime="20230405 10:08:19.720" endtime="20230405 10:08:19.784"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; Expired Year : ${expiredYear_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 10:08:19.784" endtime="20230405 10:08:19.785"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${cvv_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:19.785" endtime="20230405 10:08:19.799"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${cvv_field}</arg>
+<arg>${cvv_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:19.800" level="INFO">Typing text '766' into text field 'id:cvv'.</msg>
+<status status="PASS" starttime="20230405 10:08:19.800" endtime="20230405 10:08:20.378"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; CVV : ${cvv_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 10:08:20.379" endtime="20230405 10:08:20.379"/>
+</kw>
+<status status="PASS" starttime="20230405 10:08:17.505" endtime="20230405 10:08:20.379"/>
+</kw>
+<kw name="Transaction Detail" library="keyword">
+<arg>${amount_field}</arg>
+<arg>${amount_data}</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${amount_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:20.379" endtime="20230405 10:08:20.392"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${amount_field}</arg>
+<arg>${amount_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:20.392" level="INFO">Typing text '150' into text field 'id:amount'.</msg>
+<status status="PASS" starttime="20230405 10:08:20.392" endtime="20230405 10:08:20.564"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; Amount : ${amount_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 10:08:20.564" endtime="20230405 10:08:20.565"/>
+</kw>
+<status status="PASS" starttime="20230405 10:08:20.379" endtime="20230405 10:08:20.565"/>
+</kw>
+<kw name="Acquiring Merchant" library="keyword">
+<arg>${acquire_field}</arg>
+<arg>${acquire__data}</arg>
+<arg>${provice}</arg>
+<arg>${provice_data}</arg>
+<arg>${country}</arg>
+<arg>${country_data}</arg>
+<arg>${swipe_btn}</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${acquire_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:20.565" endtime="20230405 10:08:20.582"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${acquire_field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:20.582" level="INFO">Clicking element 'acquirer'.</msg>
+<status status="PASS" starttime="20230405 10:08:20.582" endtime="20230405 10:08:20.689"/>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>document.getElementById('${acquire_field}').value='${acquire__data}'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230405 10:08:20.690" level="INFO">Executing JavaScript:
+document.getElementById('acquirer').value='Test Ryu Merchantttttt'
+Without any arguments.</msg>
+<status status="PASS" starttime="20230405 10:08:20.689" endtime="20230405 10:08:20.703"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; Name of the shop : ${acquire__data}${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 10:08:20.703" endtime="20230405 10:08:20.704"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${provice}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:20.704" endtime="20230405 10:08:20.723"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${provice}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:20.723" level="INFO">Clicking element 'province'.</msg>
+<status status="PASS" starttime="20230405 10:08:20.723" endtime="20230405 10:08:20.803"/>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>document.getElementById('${provice}').value='${provice_data}'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230405 10:08:20.803" level="INFO">Executing JavaScript:
+document.getElementById('province').value='Pathum Thanit'
+Without any arguments.</msg>
+<status status="PASS" starttime="20230405 10:08:20.803" endtime="20230405 10:08:20.809"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; Province or city of the shop : ${provice_data}${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 10:08:20.809" endtime="20230405 10:08:20.809"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${country}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:20.809" endtime="20230405 10:08:20.839"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${country}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:20.839" level="INFO">Clicking element 'country'.</msg>
+<status status="PASS" starttime="20230405 10:08:20.839" endtime="20230405 10:08:20.993"/>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>document.getElementById('${country}').value='${country_data}'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230405 10:08:20.994" level="INFO">Executing JavaScript:
+document.getElementById('country').value='THA'
+Without any arguments.</msg>
+<status status="PASS" starttime="20230405 10:08:20.993" endtime="20230405 10:08:21.000"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; Three letter country code : ${country_data}${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 10:08:21.000" endtime="20230405 10:08:21.001"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${swipe_btn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230405 10:08:21.001" endtime="20230405 10:08:21.028"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${swipe_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230405 10:08:21.029" level="INFO">Clicking element 'id:swipe'.</msg>
+<status status="PASS" starttime="20230405 10:08:21.029" endtime="20230405 10:08:21.620"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230405 10:08:31.622" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230405 10:08:21.620" endtime="20230405 10:08:31.622"/>
+</kw>
+<status status="PASS" starttime="20230405 10:08:20.565" endtime="20230405 10:08:31.622"/>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<arg>Result Code: 0000 Approved</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230405 10:08:31.699" level="INFO">Current page contains text 'Result Code: 0000 Approved'.</msg>
+<status status="PASS" starttime="20230405 10:08:31.623" endtime="20230405 10:08:31.699"/>
+</kw>
+<doc>Jitta UAT Payment</doc>
+<status status="PASS" starttime="20230405 10:07:57.920" endtime="20230405 10:08:31.699"/>
+</test>
+<kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230405 10:08:31.700" endtime="20230405 10:08:31.800"/>
+</kw>
+<status status="PASS" starttime="20230405 10:07:57.736" endtime="20230405 10:08:31.800"/>
+</suite>
+<status status="PASS" starttime="20230405 10:07:57.735" endtime="20230405 10:08:31.801"/>
+</suite>
+<status status="PASS" starttime="20230405 10:07:57.699" endtime="20230405 10:08:31.801"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="[UAT] Jitta Card Payment">[UAT] Jitta Card Payment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testcase">[UAT] Jitta Card Payment.Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testcase">[UAT] Jitta Card Payment.Testcase.Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

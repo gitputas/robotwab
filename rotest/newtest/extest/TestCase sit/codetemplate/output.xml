@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.11.0 on win32)" generated="20230508 17:05:30.654" rpa="false" schemaversion="3">
+<suite id="s1" name="Cimbcode" source="C:\rotest\newtest\extest\TestCase\codetemplate\cimbcode.robot">
+<test id="s1-t1" name="TC01 cimbcode SIT" line="7">
+<kw name="opensitcode" library="keyword">
+<arg>${sitcode}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${sitcode}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 17:05:30.827" level="INFO">Opening browser 'chrome' to base url 'https://dev-hwplugin.chillpay.co/chillpay/payment/dev3/code-template01.php'.</msg>
+<status status="PASS" starttime="20230508 17:05:30.827" endtime="20230508 17:05:32.277"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>Merchant Code</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 17:05:32.278" endtime="20230508 17:05:32.290"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n} ${\n} Open URL : ${sitapi}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 17:05:32.290" endtime="20230508 17:05:32.292"/>
+</kw>
+<status status="PASS" starttime="20230508 17:05:30.827" endtime="20230508 17:05:32.292"/>
+</kw>
+<kw name="demo qrcode codetemplate" library="keyword">
+<arg>${merchantbox}</arg>
+<arg>${merchantme}</arg>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>${merchantbox}</arg>
+<arg>${merchantme}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230508 17:05:32.293" level="INFO">Selecting options from selection list 'id:MerchantCode' by value M030371.</msg>
+<status status="PASS" starttime="20230508 17:05:32.292" endtime="20230508 17:05:32.401"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>${routebox}</arg>
+<arg>${routedata14}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230508 17:05:32.402" level="INFO">Selecting options from selection list 'id:RouteNo' by value 14.</msg>
+<status status="PASS" starttime="20230508 17:05:32.401" endtime="20230508 17:05:32.477"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${amountbox}</arg>
+<arg>${amountdata}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 17:05:32.478" level="INFO">Typing text '20' into text field 'id:Amount'.</msg>
+<status status="PASS" starttime="20230508 17:05:32.477" endtime="20230508 17:05:32.567"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${paymentbutton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 17:05:32.569" level="INFO">Clicking element 'id:btnSubmit'.</msg>
+<status status="PASS" starttime="20230508 17:05:32.567" endtime="20230508 17:05:33.163"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n} Amount : ${amountdata}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 17:05:33.163" endtime="20230508 17:05:33.163"/>
+</kw>
+<status status="PASS" starttime="20230508 17:05:32.292" endtime="20230508 17:05:33.165"/>
+</kw>
+<kw name="demo codetemplate qr" library="keyword">
+<arg>${clickqr}</arg>
+<arg>${clickqrto}</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${clickqr}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230508 17:05:33.165" endtime="20230508 17:05:33.395"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${clickqr}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 17:05:33.395" level="INFO">Clicking element 'xpath://*[@id="mmp-paymentmethod-tabs"]/div'.</msg>
+<status status="PASS" starttime="20230508 17:05:33.395" endtime="20230508 17:05:33.428"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${clickqr}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230508 17:05:33.428" endtime="20230508 17:05:33.442"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${clickqrto}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 17:05:33.442" level="INFO">Clicking element 'id:TxtChannelQRPayment'.</msg>
+<status status="PASS" starttime="20230508 17:05:33.442" endtime="20230508 17:05:33.465"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${clickqr}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230508 17:05:33.465" endtime="20230508 17:05:33.473"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${button make Demo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 17:05:33.474" level="INFO">Clicking element 'id:mmp-button-submitpayment'.</msg>
+<status status="PASS" starttime="20230508 17:05:33.474" endtime="20230508 17:05:33.503"/>
+</kw>
+<status status="PASS" starttime="20230508 17:05:33.165" endtime="20230508 17:05:33.503"/>
+</kw>
+<kw name="get value qr" library="keyword">
+<arg>${qrsuccess}</arg>
+<arg>${browser}</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>BtnSaveQR</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230508 17:05:33.503" endtime="20230508 17:05:34.795"/>
+</kw>
+<kw name="Get Value" library="Selenium2Library">
+<var>${ver}</var>
+<arg>${gettnx}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20230508 17:05:34.810" level="INFO">${ver} = 327167</msg>
+<status status="PASS" starttime="20230508 17:05:34.795" endtime="20230508 17:05:34.810"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ver}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230508 17:05:34.810" level="INFO">${ver} = 327167</msg>
+<status status="PASS" starttime="20230508 17:05:34.810" endtime="20230508 17:05:34.810"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${qrsuccess}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 17:05:34.811" level="INFO">Opening browser 'chrome' to base url 'https://dev-hwplugin.chillpay.co/chillpay/payment/dev3/confirm-transaction.php'.</msg>
+<status status="PASS" starttime="20230508 17:05:34.810" endtime="20230508 17:05:36.142"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>${channalbox}</arg>
+<arg>QRCODE</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230508 17:05:36.142" level="INFO">Selecting options from selection list 'id:ChannelID' by value QRCODE.</msg>
+<status status="PASS" starttime="20230508 17:05:36.142" endtime="20230508 17:05:36.205"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath://*[@id="OrderNo"]</arg>
+<arg>${ver}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 17:05:36.206" level="INFO">Typing text '327167' into text field 'xpath://*[@id="OrderNo"]'.</msg>
+<status status="PASS" starttime="20230508 17:05:36.206" endtime="20230508 17:05:36.296"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath://*[@id="Amount"]</arg>
+<arg>20.65</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 17:05:36.296" level="INFO">Typing text '20.65' into text field 'xpath://*[@id="Amount"]'.</msg>
+<status status="PASS" starttime="20230508 17:05:36.296" endtime="20230508 17:05:36.386"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230508 17:05:39.388" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230508 17:05:36.386" endtime="20230508 17:05:39.388"/>
+</kw>
+<status status="PASS" starttime="20230508 17:05:33.503" endtime="20230508 17:05:39.388"/>
+</kw>
+<doc>qrcimb
+SIT Environment</doc>
+<tag>SIT</tag>
+<status status="PASS" starttime="20230508 17:05:30.826" endtime="20230508 17:05:39.388"/>
+</test>
+<status status="PASS" starttime="20230508 17:05:30.656" endtime="20230508 17:05:39.388"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">SIT</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Cimbcode">Cimbcode</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

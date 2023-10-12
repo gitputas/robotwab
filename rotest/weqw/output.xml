@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.11.0 on win32)" generated="20230609 18:00:34.679" rpa="false" schemaversion="3">
+<suite id="s1" name="Payment" source="c:\rotest\weqw\payment.robot">
+<test id="s1-t1" name="TC01 payment kbank" line="67">
+<kw name="openprod v2">
+<arg>${prodv2}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${prodv2}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230609 18:00:34.848" level="INFO">Opening browser 'chrome' to base url 'https://dev-hwplugin.chillpay.co/chillpay/payment/prod/apiservice-payment02.php'.</msg>
+<status status="PASS" starttime="20230609 18:00:34.848" endtime="20230609 18:00:36.278"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>Merchant Code</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230609 18:00:36.278" endtime="20230609 18:00:36.289"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n} ${\n} Open URL : ${prodv2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230609 18:00:36.289" endtime="20230609 18:00:36.290"/>
+</kw>
+<status status="PASS" starttime="20230609 18:00:34.846" endtime="20230609 18:00:36.290"/>
+</kw>
+<kw name="payment kbank">
+<arg>${m1}</arg>
+<arg>${MerchantM031721}</arg>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>${m1}</arg>
+<arg>${MerchantM031721}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230609 18:00:36.292" level="INFO">Selecting options from selection list 'id:MerchantCode' by value M031721.</msg>
+<status status="PASS" starttime="20230609 18:00:36.291" endtime="20230609 18:00:36.370"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>${channel kplus}</arg>
+<arg>${kp}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230609 18:00:36.371" level="INFO">Selecting options from selection list 'id:ChannelID' by value payplus_kbank.</msg>
+<status status="PASS" starttime="20230609 18:00:36.371" endtime="20230609 18:00:36.418"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>${routebox}</arg>
+<arg>${route1}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230609 18:00:36.419" level="INFO">Selecting options from selection list 'id:RouteNo' by value 1.</msg>
+<status status="PASS" starttime="20230609 18:00:36.419" endtime="20230609 18:00:36.451"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath://*[@id="Amount"]</arg>
+<arg>20</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230609 18:00:36.452" level="INFO">Typing text '20' into text field 'xpath://*[@id="Amount"]'.</msg>
+<status status="PASS" starttime="20230609 18:00:36.451" endtime="20230609 18:00:36.521"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${phoneme}</arg>
+<arg>0909916198</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230609 18:00:36.522" level="INFO">Typing text '0909916198' into text field 'id:PhoneNumber'.</msg>
+<status status="PASS" starttime="20230609 18:00:36.522" endtime="20230609 18:00:36.579"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${paymentbutton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230609 18:00:36.580" level="INFO">Clicking element 'id:btnSubmit'.</msg>
+<status status="PASS" starttime="20230609 18:00:36.579" endtime="20230609 18:00:37.045"/>
+</kw>
+<status status="PASS" starttime="20230609 18:00:36.291" endtime="20230609 18:00:37.046"/>
+</kw>
+<status status="PASS" starttime="20230609 18:00:34.846" endtime="20230609 18:00:37.046"/>
+</test>
+<status status="PASS" starttime="20230609 18:00:34.683" endtime="20230609 18:00:37.048"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Payment">Payment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

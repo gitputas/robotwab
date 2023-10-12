@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.12 on darwin)" generated="20230403 15:02:33.509" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase" source="/Users/it01gb/Desktop/[UAT] Jitta Card Payment/testcase">
+<suite id="s1-s1" name="Testcase" source="/Users/it01gb/Desktop/[UAT] Jitta Card Payment/testcase/testcase.robot">
+<test id="s1-s1-t1" name="[TC01] Login" line="7">
+<kw name="Login SimPOS" library="keyword">
+<arg>${simpos_url}</arg>
+<arg>${login_url}</arg>
+<arg>${login_btn}</arg>
+<arg>${email}</arg>
+<arg>${email_test_data}</arg>
+<arg>${password}</arg>
+<arg>${password_test_data}</arg>
+<arg>${signin_btn}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${simpos_url}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230403 15:02:33.666" level="INFO">Opening browser 'gc' to base url 'https://developer.sprint.paymentology.com/tools/simpos/'.</msg>
+<status status="PASS" starttime="20230403 15:02:33.665" endtime="20230403 15:02:46.324"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230403 15:02:46.325" endtime="20230403 15:02:46.740"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230403 15:02:46.741" level="INFO">Clicking element 'xpath: //*[contains(text(), "Login")]'.</msg>
+<status status="PASS" starttime="20230403 15:02:46.740" endtime="20230403 15:02:48.978"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230403 15:02:48.978" endtime="20230403 15:02:48.999"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${email}</arg>
+<arg>${email_test_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230403 15:02:49.000" level="INFO">Typing text 'it@gbprimepay.com' into text field 'id:login-user-email'.</msg>
+<status status="PASS" starttime="20230403 15:02:48.999" endtime="20230403 15:02:49.306"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230403 15:02:49.306" endtime="20230403 15:02:49.341"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>${password}</arg>
+<arg>${password_test_data}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230403 15:02:49.342" level="INFO">Typing password into text field 'id:login-user-password'.</msg>
+<msg timestamp="20230403 15:02:49.363" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230403 15:02:49.472" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230403 15:02:49.342" endtime="20230403 15:02:49.472"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${signin_btn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230403 15:02:49.472" endtime="20230403 15:02:49.484"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${signin_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230403 15:02:49.484" level="INFO">Clicking element 'id:js--login-submit'.</msg>
+<status status="PASS" starttime="20230403 15:02:49.484" endtime="20230403 15:02:49.651"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230403 15:02:54.654" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230403 15:02:49.652" endtime="20230403 15:02:54.654"/>
+</kw>
+<status status="PASS" starttime="20230403 15:02:33.665" endtime="20230403 15:02:54.654"/>
+</kw>
+<kw name="Card Detail" library="keyword">
+<arg>${cardNo_field}</arg>
+<arg>${cardNo_data}</arg>
+<arg>${expiredMonth_field}</arg>
+<arg>${expiredMonth_data}</arg>
+<arg>${expiredYear_field}</arg>
+<arg>${expiredYear_data}</arg>
+<arg>${cvv_field}</arg>
+<arg>${cvv_data}</arg>
+<kw name="Select Frame" library="Selenium2Library">
+<arg>//*[@id="post-363"]/section[1]/div/div/div/iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230403 15:02:54.656" level="INFO">Selecting frame '//*[@id="post-363"]/section[1]/div/div/div/iframe'.</msg>
+<msg timestamp="20230403 15:02:54.935" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230403 15:02:54.935" level="FAIL">Element with locator '//*[@id="post-363"]/section[1]/div/div/div/iframe' not found.</msg>
+<status status="FAIL" starttime="20230403 15:02:54.655" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${web_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${cardNo_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${cardNo_field}</arg>
+<arg>${cardNo_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}${\n}&gt; Card Number : ${cardNo_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${expiredMonth_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${expiredMonth_field}</arg>
+<arg>${expiredMonth_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; Expired Month : ${expiredMonth_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${expiredYear_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${expiredYear_field}</arg>
+<arg>${expiredYear_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; Expired Year : ${expiredYear_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.938" endtime="20230403 15:02:54.938"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${cvv_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.939" endtime="20230403 15:02:54.939"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${cvv_field}</arg>
+<arg>${cvv_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.939" endtime="20230403 15:02:54.939"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>&gt; CVV : ${cvv_data} ${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230403 15:02:54.939" endtime="20230403 15:02:54.939"/>
+</kw>
+<status status="FAIL" starttime="20230403 15:02:54.655" endtime="20230403 15:02:54.939"/>
+</kw>
+<kw name="Transaction Detail" library="keyword">
+<arg>${amount_field}</arg>
+<arg>${amount_data}</arg>
+<status status="NOT RUN" starttime="20230403 15:02:54.939" endtime="20230403 15:02:54.939"/>
+</kw>
+<kw name="Acquiring Merchant" library="keyword">
+<arg>${acquire_field}</arg>
+<arg>${acquire__data}</arg>
+<arg>${provice}</arg>
+<arg>${provice_data}</arg>
+<arg>${country}</arg>
+<arg>${country_data}</arg>
+<arg>${swipe_btn}</arg>
+<status status="NOT RUN" starttime="20230403 15:02:54.939" endtime="20230403 15:02:54.939"/>
+</kw>
+<doc>Jitta UAT Payment</doc>
+<status status="FAIL" starttime="20230403 15:02:33.664" endtime="20230403 15:02:54.939">Element with locator '//*[@id="post-363"]/section[1]/div/div/div/iframe' not found.</status>
+</test>
+<status status="FAIL" starttime="20230403 15:02:33.522" endtime="20230403 15:02:54.940"/>
+</suite>
+<status status="FAIL" starttime="20230403 15:02:33.510" endtime="20230403 15:02:54.941"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testcase">Testcase.Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

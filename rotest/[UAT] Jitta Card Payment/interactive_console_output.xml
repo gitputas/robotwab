@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on darwin)" generated="20230403 12:13:50.614" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="/Users/it01gb/.vscode/extensions/robocorp.robotframework-lsp-1.9.0/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Browser">
+<arg>${simpos_url}</arg>
+<arg>gc</arg>
+<msg timestamp="20230403 12:13:51.123" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20230403 12:13:51.123" endtime="20230403 12:13:51.123"/>
+</kw>
+<kw name="Wait Until Page Contains">
+<arg>SimPOS</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.124" endtime="20230403 12:13:51.124"/>
+</kw>
+<kw name="Click Element">
+<arg>${login_btn}</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.125" endtime="20230403 12:13:51.125"/>
+</kw>
+<kw name="Wait Until Page Contains">
+<arg>Sign in</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.125" endtime="20230403 12:13:51.125"/>
+</kw>
+<kw name="Wait Until Element Is Enabled">
+<arg>${email}</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.126" endtime="20230403 12:13:51.126"/>
+</kw>
+<kw name="Click Element">
+<arg>${email}</arg>
+<arg>${email_test_data}</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.126" endtime="20230403 12:13:51.126"/>
+</kw>
+<kw name="Wait Until Element Is Enabled">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.127" endtime="20230403 12:13:51.127"/>
+</kw>
+<kw name="Click Element">
+<arg>${password}</arg>
+<arg>${password_test_data}</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.127" endtime="20230403 12:13:51.127"/>
+</kw>
+<kw name="Wait Until Element Is Enabled">
+<arg>${signin_btn}</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.128" endtime="20230403 12:13:51.128"/>
+</kw>
+<kw name="Click Element">
+<arg>${signin_btn}</arg>
+<status status="NOT RUN" starttime="20230403 12:13:51.129" endtime="20230403 12:13:51.129"/>
+</kw>
+<status status="PASS" starttime="20230403 12:13:50.644" endtime="20230403 12:13:52.575"/>
+</kw>
+<status status="PASS" starttime="20230403 12:13:50.643" endtime="20230403 12:13:52.575"/>
+</test>
+<status status="PASS" starttime="20230403 12:13:50.615" endtime="20230403 12:13:52.576"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.11.0 on win32)" generated="20230210 11:39:39.467" rpa="false" schemaversion="3">
+<suite id="s1" name="Tapi" source="C:\Users\putas\OneDrive\Documents\rotest\tapi.robot">
+<test id="s1-t1" name="Example" line="5">
+<status status="FAIL" starttime="20230210 11:39:39.489" endtime="20230210 11:39:39.489">Test contains no keywords.</status>
+</test>
+<test id="s1-t2" name="${json_string} catenate" line="6">
+<kw name="... {">
+<msg timestamp="20230210 11:39:39.491" level="FAIL">No keyword with name '... {' found.</msg>
+<status status="FAIL" starttime="20230210 11:39:39.491" endtime="20230210 11:39:39.491"/>
+</kw>
+<kw name="... &quot;p&quot;: &quot;10&quot;,">
+<status status="NOT RUN" starttime="20230210 11:39:39.492" endtime="20230210 11:39:39.492"/>
+</kw>
+<kw name="... &quot;v&quot;: 100,">
+<status status="NOT RUN" starttime="20230210 11:39:39.493" endtime="20230210 11:39:39.493"/>
+</kw>
+<kw name="... &quot;vt&quot;: {">
+<status status="NOT RUN" starttime="20230210 11:39:39.494" endtime="20230210 11:39:39.494"/>
+</kw>
+<kw name="... &quot;dp&quot;: &quot;Field to be edited&quot;">
+<status status="NOT RUN" starttime="20230210 11:39:39.496" endtime="20230210 11:39:39.496"/>
+</kw>
+<kw name="... }">
+<status status="NOT RUN" starttime="20230210 11:39:39.497" endtime="20230210 11:39:39.497"/>
+</kw>
+<kw name="... }">
+<status status="NOT RUN" starttime="20230210 11:39:39.498" endtime="20230210 11:39:39.498"/>
+</kw>
+<kw name="log to console \nOriginal JSON:\n${json_string}">
+<status status="NOT RUN" starttime="20230210 11:39:39.499" endtime="20230210 11:39:39.499"/>
+</kw>
+<kw name="${json evaluate json.loads('''${json_string}''') json">
+<status status="NOT RUN" starttime="20230210 11:39:39.500" endtime="20230210 11:39:39.500"/>
+</kw>
+<kw name="set to dictionary ${json[&quot;vt&quot;]} dp=the new value">
+<status status="NOT RUN" starttime="20230210 11:39:39.501" endtime="20230210 11:39:39.501"/>
+</kw>
+<kw name="${json_string evaluate json.dumps(${json}) json">
+<status status="NOT RUN" starttime="20230210 11:39:39.502" endtime="20230210 11:39:39.502"/>
+</kw>
+<kw name="log to console \nNew JSON string:\n${json_string}">
+<status status="NOT RUN" starttime="20230210 11:39:39.502" endtime="20230210 11:39:39.502"/>
+</kw>
+<status status="FAIL" starttime="20230210 11:39:39.490" endtime="20230210 11:39:39.504">No keyword with name '... {' found.</status>
+</test>
+<status status="FAIL" starttime="20230210 11:39:39.468" endtime="20230210 11:39:39.504"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Tapi">Tapi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

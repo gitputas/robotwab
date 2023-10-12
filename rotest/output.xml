@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.6 on darwin)" generated="20231012 15:05:31.317" rpa="false" schemaversion="4">
+<suite id="s1" name="Api" source="/Users/putas/robotwab/rotest/all/api.robot">
+<test id="s1-t1" name="API QR success payment" line="11">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>mysession</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20231012 15:05:31.374" level="INFO">Creating Session using : alias=mysession, url=https://dev-sandbox-apibank.chillpay.co/api/KTBQRPaymentService/Payment, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20231012 15:05:31.374" endtime="20231012 15:05:31.375"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${Authorization}</var>
+<arg>Username=ktbapitest01</arg>
+<arg>Password=ktb@pass001</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231012 15:05:31.376" level="INFO">${Authorization} = {'Username': 'ktbapitest01', 'Password': 'ktb@pass001'}</msg>
+<status status="PASS" starttime="20231012 15:05:31.375" endtime="20231012 15:05:31.376"/>
+</kw>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>mysesion</arg>
+<arg>${baseUrl}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20231012 15:05:31.376" level="INFO">Creating Session using : alias=mysesion, url=https://dev-sandbox-apibank.chillpay.co/api/KTBQRPaymentService/Payment, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20231012 15:05:31.376" endtime="20231012 15:05:31.376"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${body}</var>
+<arg>user=ktbapitest01</arg>
+<arg>password=ktb@pass001</arg>
+<arg>comCode=24179</arg>
+<arg>prodCode=24179</arg>
+<arg>command=Payment</arg>
+<arg>bankCode=6</arg>
+<arg>bankRef=K00002 00009876</arg>
+<arg>tranxId=315255</arg>
+<arg>dateTime=20180601180029</arg>
+<arg>effDate=20180601</arg>
+<arg>amount=3505.00</arg>
+<arg>channel=2</arg>
+<arg>cusName=Davis John</arg>
+<arg>ref1=315255</arg>
+<arg>ref2=12345678901234567890</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231012 15:05:31.377" level="INFO">${body} = {'user': 'ktbapitest01', 'password': 'ktb@pass001', 'comCode': '24179', 'prodCode': '24179', 'command': 'Payment', 'bankCode': '6', 'bankRef': 'K00002 00009876', 'tranxId': '315255', 'dateTime': '2018...</msg>
+<status status="PASS" starttime="20231012 15:05:31.376" endtime="20231012 15:05:31.377"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${header}</var>
+<arg>Content-type=application/json</arg>
+<arg>Postman-Token=calculated when request is sent</arg>
+<arg>Authorization=Basic a3RiYXBpdGVzdDAxOmt0YkBwYXNzMDAx</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231012 15:05:31.378" level="INFO">${header} = {'Content-type': 'application/json', 'Postman-Token': 'calculated when request is sent', 'Authorization': 'Basic a3RiYXBpdGVzdDAxOmt0YkBwYXNzMDAx'}</msg>
+<status status="PASS" starttime="20231012 15:05:31.377" endtime="20231012 15:05:31.378"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/Payment</arg>
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20231012 15:05:31.579" level="INFO">POST Request : url=https://dev-sandbox-apibank.chillpay.co/api/KTBQRPaymentService/Payment/Payment 
+ path_url=/api/KTBQRPaymentService/Payment/Payment 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-type': 'application/json', 'Postman-Token': 'calculated when request is sent', 'Authorization': 'Basic a3RiYXBpdGVzdDAxOmt0YkBwYXNzMDAx', 'Content-Length': '258'} 
+ body=user=ktbapitest01&amp;password=ktb%40pass001&amp;comCode=24179&amp;prodCode=24179&amp;command=Payment&amp;bankCode=6&amp;bankRef=K00002+00009876&amp;tranxId=315255&amp;dateTime=20180601180029&amp;effDate=20180601&amp;amount=3505.00&amp;channel=2&amp;cusName=Davis+John&amp;ref1=315255&amp;ref2=12345678901234567890 
+ </msg>
+<msg timestamp="20231012 15:05:31.580" level="INFO">POST Response : url=https://dev-sandbox-apibank.chillpay.co/api/KTBQRPaymentService/Payment/Payment 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'private', 'Content-Type': 'text/html; charset=utf-8', 'Server': 'Microsoft-IIS/10.0', 'X-Powered-By': 'ASP.NET', 'Date': 'Thu, 12 Oct 2023 08:05:31 GMT', 'Content-Length': '938'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;404 Page not found &lt;/title&gt;
+    &lt;style type="text/css"&gt;
+        body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 14px;line-height: 1;color: #a94442;}
+        h1 {font-family: inherit;font-size: 40px;font-weight: 500;line-height: 1.1;}
+        p {font-family: inherit;font-size: 14px;margin-bottom: 10px;}
+        .container {padding-left: 15px;padding-right: 15px;margin-left: auto;margin-right: auto;}
+
+        @media (min-width: 1200px) {
+            .container {width: 1170px;}
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;404 Page Not Found&lt;/h1&gt;
+        &lt;p&gt;The resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+ </msg>
+<msg timestamp="20231012 15:05:31.580" level="INFO">/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host 'dev-sandbox-apibank.chillpay.co'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg timestamp="20231012 15:05:31.580" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20231012 15:05:31.378" endtime="20231012 15:05:31.580"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231012 15:05:31.581" endtime="20231012 15:05:31.581"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231012 15:05:31.582" endtime="20231012 15:05:31.583"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231012 15:05:31.583" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20231012 15:05:31.583" endtime="20231012 15:05:31.583"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231012 15:05:31.584" endtime="20231012 15:05:31.585"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${res_body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231012 15:05:31.586" level="INFO">${res_body} = &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;404 Page not found &lt;/title&gt;
+    &lt;style ...</msg>
+<status status="PASS" starttime="20231012 15:05:31.585" endtime="20231012 15:05:31.586"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${res_body}</arg>
+<arg>0</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20231012 15:05:31.587" endtime="20231012 15:05:31.587"/>
+</kw>
+<status status="PASS" starttime="20231012 15:05:31.373" endtime="20231012 15:05:31.588"/>
+</test>
+<status status="PASS" starttime="20231012 15:05:31.319" endtime="20231012 15:05:31.590"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Api">Api</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
