@@ -28,5 +28,3 @@ Verify Page Title
     [Arguments]    ${expected_title}
     ${title}    Get Title
     Should Be Equal    ${title}    ${expected_title}
-vec    
-    Select All From List    555
