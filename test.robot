@@ -27,4 +27,4 @@ Click First Search Result
 Verify Page Title
     [Arguments]    ${expected_title}
     ${title}    Get Title
-    Should Be Equal    ${title}    ${expected_title}
+    Should Be Equal    ${title}    ${expected_title}    555
