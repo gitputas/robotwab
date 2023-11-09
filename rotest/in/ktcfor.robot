@@ -5,7 +5,6 @@ Library    Selenium2Library
 
 *** Keywords ***
     Set Selenium Speed    10s
-
 *** Test Cases ***
 ckbank success
     Open Browser   https://dev-hwplugin.chillpay.co/chillpay/payment/dev3/apiservice-payment02.php   chrome

@@ -5,7 +5,7 @@ Library               RequestsLibrary
 
 Quick Get Request Test
     ${response}=    GET  https://www.google.com
-
+    Sleep    100000s    
 Quick Get Request With Parameters Test
     ${response}=    GET  https://www.google.com/search  params=query=ciao  expected_status=200
 

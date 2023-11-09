@@ -20,3 +20,7 @@ Gen QR success
     # Close All Browsers 
     # END
 
+    FOR    ${element}    IN    @{LIST}
+        Log    ${element}
+        
+    for
